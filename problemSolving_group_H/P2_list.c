@@ -1,8 +1,12 @@
+// Author: 202534724 권지우
+// P2: Build linked list from sorted array
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include "P2_list.h"   
 
+// 새 노드를 동적 할당하여 생성하는 함수
 Node* createNode(Registration r)
 {
     Node* newNode = (Node*)malloc(sizeof(Node));
@@ -16,6 +20,7 @@ Node* createNode(Registration r)
     return newNode;
 }
 
+// 정렬된 배열 데이터를 순서대로 연결 리스트로 변환
 Node* buildListFromArray(Registration arr[], int n)
 {
     Node* head = NULL;
@@ -37,6 +42,7 @@ Node* buildListFromArray(Registration arr[], int n)
     return head;
 }
 
+// 연결 리스트 전체를 출력
 void printList(Node* head)
 {
     Node* cur = head;
@@ -56,6 +62,7 @@ void printList(Node* head)
     }
 }
 
+// 연결 리스트의 모든 노드를 해제
 void freeList(Node* head)
 {
     Node* cur = head;
@@ -65,3 +72,4 @@ void freeList(Node* head)
         free(tmp);
     }
 }
+
