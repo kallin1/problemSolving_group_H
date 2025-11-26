@@ -1,5 +1,6 @@
 ﻿#include <stdio.h>
 #include "P1_sort.h"
+#include "list.h"
 
 int main() {
 
@@ -16,7 +17,16 @@ int main() {
     printArray(arr, n);
     writeSortedToFile("P1.txt", arr, n);
 
-    // P2 : 
+    // P2 : 배열 -> 연결리스트
+    printf("\n< P2 : Linked List >\n");
+
+    Node* head = buildListFromArray(arr, n);
+    printList(head);         
+
+    freeList(head);
+
+    return 0;
+}
 
 
 
