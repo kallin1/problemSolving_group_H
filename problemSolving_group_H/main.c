@@ -1,6 +1,8 @@
 ﻿#include <stdio.h>
 #include "P1_sort.h"
-#include "list.h"
+#include "P2_list.h"
+#include "P3-1_search.h"
+#include "P3-2_search.h"
 
 int main() {
 
@@ -8,22 +10,34 @@ int main() {
     int n;
 
     // setup : data load
-    n = loadData(arr, "../registration_data.txt");
+    n = loadData(arr, "registration_data.txt");
     
     // P1: Selection Sort
     selectionSort(arr, n);
 
-    printf("\n< P1 >\n");
+    printf("\n< P1: Selection Sort in Array >\n");
     printArray(arr, n);
     writeSortedToFile("P1.txt", arr, n);
 
-    // P2 : 배열 -> 연결리스트
-    printf("\n< P2 : Linked List >\n");
+    // P2 : Array -> Linked List
+    printf("\n< P2: Linked List >\n");
 
     Node* head = buildListFromArray(arr, n);
     printList(head);         
 
-    freeList(head);
+    // P3-1: Search fee-paid ("yes") in array
+    printf("\n< P3-1: Search fee \"yes\" in Array >\n");
+    searchArrayFeePaid(arr, n);
 
+    // P3-2: Search fee-paid ("yes") in linked list
+    printf("\n< P3-2: Search fee \"yes\" in Linked List >\n");
+    searchListFeePaid(head);
+
+
+
+
+
+
+    freeList(head);
     return 0;
 }
