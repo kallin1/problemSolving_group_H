@@ -9,7 +9,7 @@ int main() {
     Registration arr[MAX_RECORDS];
     int n;
 
-    // setup : data load
+    // setup: data load
     n = loadData(arr, "registration_data.txt");
     
     // P1: Selection Sort
@@ -19,7 +19,7 @@ int main() {
     printArray(arr, n);
     writeSortedToFile("P1.txt", arr, n);
 
-    // P2 : Array -> Linked List
+    // P2: Array -> Linked List
     printf("\n< P2: Linked List >\n");
 
     Node* head = buildListFromArray(arr, n);
