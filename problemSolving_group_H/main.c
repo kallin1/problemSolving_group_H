@@ -4,6 +4,7 @@
 #include "P3-1_search.h"
 #include "P3-2_search.h"
 #include "P4_search.h"
+#include "P5_update.h"
 
 int main() {
 
@@ -41,6 +42,18 @@ int main() {
     // P4-2: Search "Gachon University" in Linked List
     printf("\n< P4-2: Search \"Gachon University\" in Linked List >\n");
     Search_Gachon_List(head);
+
+    // P5-1
+    printf("\n< P5-1: Update Array (remove Choi's canceled registration) >\n");
+    // (Mark P5-1 in code)
+    removeChoiCanceled_Array(arr, n);
+    printArray(arr, n);
+
+    // P5-2
+    printf("\n< P5-2: Update Linked List (remove Choi's canceled registration) >\n");
+    // (Mark P5-2 in code)
+    removeChoiCanceled_List(&head);
+    printList(head);
 
     
 
