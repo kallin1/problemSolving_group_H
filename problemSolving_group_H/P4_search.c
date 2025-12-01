@@ -1,3 +1,5 @@
+// Author: 2024***** 김학현
+
 #include <stdio.h>
 #include <string.h>
 #include "P4_search.h"
