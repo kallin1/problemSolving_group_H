@@ -1,3 +1,5 @@
+// Author: 2025***** 변예서
+
 // P5_update.c
 #include <stdio.h>
 #include <string.h>
