@@ -1,4 +1,4 @@
-// Author: 202234861 ±Ë¥Ÿ¿Œ
+// Author: 202234861 ÍπÄÎã§Ïù∏
 
 #ifndef DATA_SORT_H
 #define DATA_SORT_H
