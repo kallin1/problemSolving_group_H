@@ -34,7 +34,7 @@ void removeChoiCanceled_Array(Registration arr[], int n)
 
             // “empty” 로 만드는 방법 : 문자열을 전부 빈 문자열로
             arr[i].name[0]       = '\0';
-            arr[i].university[0] = '\0';
+            arr[i].org[0] = '\0';
             arr[i].fee[0]        = '\0';
         }
     }
