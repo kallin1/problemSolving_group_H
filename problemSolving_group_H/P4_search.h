@@ -1,4 +1,4 @@
-// Author: 2024 김학현
+// Author: 202434748 김학현
 
 #ifndef P4_SEARCH_H
 #define P4_SEARCH_H
