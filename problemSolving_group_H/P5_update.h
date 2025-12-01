@@ -1,4 +1,4 @@
-// Author: 2025***** 변예서
+// Author: 202534029 변예서
 
 // P5_update.h
 #ifndef P5_UPDATE_H
