@@ -54,13 +54,7 @@ int main() {
     // (Mark P5-2 in code)
     removeChoiCanceled_List(&head);
     printList(head);
-
     
-
-
-
-
-
 
     freeList(head);
     return 0;
