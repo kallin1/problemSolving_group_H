@@ -1,4 +1,4 @@
-// Author: 202234861 ±Ë¥Ÿ¿Œ
+// Author: 202234861 ÍπÄÎã§Ïù∏
 // load txt file, P1(sort array, store P1.txt)
 
 #define _CRT_SECURE_NO_WARNINGS
