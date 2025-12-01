@@ -1,3 +1,5 @@
+// Author: 202234950 황성욱
+
 #include <stdio.h>
 #include <string.h>
 #include "P3-2_search.h"
@@ -20,4 +22,5 @@ void searchListFeePaid(Node* head)
     if (found == 0) {
         printf("No matching records found.\n");
     }
+
 }
